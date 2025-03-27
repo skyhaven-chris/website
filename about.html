@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skyhaven Group</title>
+  <style>
+    /* Reset / Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    /* Top Navigation Bar */
+    nav {
+      width: 100%;
+      background-color: #111;
+      position: fixed; 
+      top: 0; 
+      left: 0;
+      padding: 1rem 2rem;
+      z-index: 999; /* Ensures the nav stays on top */
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem; 
+      align-items: center;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #3498db; /* Hover color */
+    }
+
+    /* Main container spacing */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6rem 2rem 2rem; /* Top padding to clear the fixed nav */
+    }
+
+    /* Headline / Mission statement */
+    .mission-title {
+      font-size: 2rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+      color: #3498db; /* Blue accent for the headline */
+      font-weight: bold;
+    }
+
+    /* Body text under mission statement */
+    .mission-body {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    /* Our Expertise section */
+    .expertise-title {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      font-weight: bold;
+    }
+    .expertise-list {
+      list-style: disc;
+      margin-left: 1.3rem;
+      line-height: 1.6;
+    }
+    /* Blue highlight for bullet headings */
+    .blue-highlight {
+      color: #3498db;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    <!-- Mission Section -->
+    <h1 class="mission-title">
+      We’re on a mission to redefine business leadership &amp; unleash
+      digital innovation built on extensive operational experience.
+    </h1>
+    <p class="mission-body">
+      Our fractional C-suite team of digital natives who fuse decades of operational
+      excellence with unstoppable energy, turning breakthrough innovation into real-world
+      success. We move an organization beyond pen and paper into results.
+    </p>
+
+    <!-- Expertise Section -->
+    <h2 class="expertise-title">OUR EXPERTISE:</h2>
+    <ul class="expertise-list">
+      <li>
+        <span class="blue-highlight">Digital Strategy:</span> Empowering legacy institutions 
+        and disruptors to leverage digital innovation.
+      </li>
+      <li>
+        <span class="blue-highlight">Execution:</span> Transforming strategy into sustainable 
+        roadmaps for transformative growth.
+      </li>
+      <li>
+        <span class="blue-highlight">Product Development:</span> Igniting innovation from 
+        idea to market-shaping launch.
+      </li>
+      <li>
+        <span class="blue-highlight">Go-to-Market:</span> Dynamic strategies that break 
+        barriers and seize opportunities.
+      </li>
+      <li>
+        <span class="blue-highlight">Policy &amp; Government:</span> Navigating global 
+        regulations to secure strategic advantages.
+      </li>
+      <li>
+        <span class="blue-highlight">M&amp;A, Fundraising &amp; Investment:</span> Expert 
+        analysis enabling inorganic growth and transformation.
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>

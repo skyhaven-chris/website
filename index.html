@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skyhaven Group</title>
+  <style>
+    /* Reset / Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    /* Top Navigation Bar */
+    nav {
+      width: 100%;
+      background-color: #111; /* Slightly lighter than pure black */
+      position: fixed;       /* Sticks to the top */
+      top: 0;
+      left: 0;
+      padding: 1rem 2rem;
+      z-index: 999;          /* Ensures nav stays on top */
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem; /* Spacing between menu items */
+      align-items: center;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #3498db; /* Hover color */
+    }
+
+    /* Centered Content Container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      /* Push content below the fixed nav bar */
+      min-height: 100vh; 
+      padding-top: 6rem; /* Spacing so content isn’t hidden behind nav */
+      text-align: center;
+    }
+
+    /* "SG" styling */
+    .sg {
+      font-size: 15rem; /* Adjust as needed */
+      font-weight: bold;
+      line-height: 1;
+      margin: 0;
+    }
+    .sg .s {
+      color: #fff;
+    }
+    .sg .g {
+      color: #3498db; /* Accent color */
+    }
+
+    /* Company title: SKYHAVEN GROUP */
+    .title {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin: 1rem 0 0;
+    }
+    .title .group {
+      color: #3498db;
+      margin-left: 0.5rem;
+    }
+
+    /* Footer-style line for names and details */
+    .footer {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: lighter;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1 class="sg">
+      <span class="s">S</span>
+      <span class="g">G</span>
+    </h1>
+    <div class="title">
+      SKYHAVEN<span class="group">GROUP</span>
+    </div>
+    <div class="footer">
+      RHISHI PETHE, MICHAEL OTT, Data &amp; AI Expert, Digital Strategist
+    </div>
+  </div>
+
+</body>
+</html>
