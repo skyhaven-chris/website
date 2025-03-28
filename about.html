@@ -1,142 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Skyhaven Group</title>
-  <style>
-    /* Reset / Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background-color: #000;
-      font-family: Arial, sans-serif;
-      color: #fff;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <title>Skyhaven Group</title>
+        <style>
+            /* Reset / Base */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-    /* Top Navigation Bar */
-    nav {
-      width: 100%;
-      background-color: #111;
-      position: fixed; 
-      top: 0; 
-      left: 0;
-      padding: 1rem 2rem;
-      z-index: 999; /* Ensures the nav stays on top */
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem; 
-      align-items: center;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: color 0.3s ease;
-    }
-    nav ul li a:hover {
-      color: #3498db; /* Hover color */
-    }
+            /* Headline / Mission statement */
+            .mission-title {
+                font-size: 2rem;
+                line-height: 1.4;
+                margin-bottom: 1.5rem;
+                color: #3498db; /* Blue accent for the headline */
+                font-weight: bold;
+            }
 
-    /* Main container spacing */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 6rem 2rem 2rem; /* Top padding to clear the fixed nav */
-    }
+            /* Body text under mission statement */
+            .mission-body {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+            }
 
-    /* Headline / Mission statement */
-    .mission-title {
-      font-size: 2rem;
-      line-height: 1.4;
-      margin-bottom: 1.5rem;
-      color: #3498db; /* Blue accent for the headline */
-      font-weight: bold;
-    }
+            .expertise-title {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #3498db;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css"
+            integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Top Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">SG</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main role="main">
+            <div class="jumbotron">
+                <div class="container">
+                    <!-- Mission Section -->
+                    <h1 class="mission-title">
+                        We’re on a mission to redefine business leadership &amp;
+                        unleash digital innovation built on extensive
+                        operational experience.
+                    </h1>
+                    <p class="mission-body">
+                        Our fractional C-suite team of digital natives who fuse
+                        decades of operational excellence with unstoppable
+                        energy, turning breakthrough innovation into real-world
+                        success. We move an organization beyond pen and paper
+                        into results.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Expertise Section -->
+                <h3 class="expertise-title">OUR EXPERTISE</h3>
 
-    /* Body text under mission statement */
-    .mission-body {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 2rem;
-    }
-
-    /* Our Expertise section */
-    .expertise-title {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-      font-weight: bold;
-    }
-    .expertise-list {
-      list-style: disc;
-      margin-left: 1.3rem;
-      line-height: 1.6;
-    }
-    /* Blue highlight for bullet headings */
-    .blue-highlight {
-      color: #3498db;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Top Navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Content Container -->
-  <div class="container">
-    <!-- Mission Section -->
-    <h1 class="mission-title">
-      We’re on a mission to redefine business leadership &amp; unleash
-      digital innovation built on extensive operational experience.
-    </h1>
-    <p class="mission-body">
-      Our fractional C-suite team of digital natives who fuse decades of operational
-      excellence with unstoppable energy, turning breakthrough innovation into real-world
-      success. We move an organization beyond pen and paper into results.
-    </p>
-
-    <!-- Expertise Section -->
-    <h2 class="expertise-title">OUR EXPERTISE:</h2>
-    <ul class="expertise-list">
-      <li>
-        <span class="blue-highlight">Digital Strategy:</span> Empowering legacy institutions 
-        and disruptors to leverage digital innovation.
-      </li>
-      <li>
-        <span class="blue-highlight">Execution:</span> Transforming strategy into sustainable 
-        roadmaps for transformative growth.
-      </li>
-      <li>
-        <span class="blue-highlight">Product Development:</span> Igniting innovation from 
-        idea to market-shaping launch.
-      </li>
-      <li>
-        <span class="blue-highlight">Go-to-Market:</span> Dynamic strategies that break 
-        barriers and seize opportunities.
-      </li>
-      <li>
-        <span class="blue-highlight">Policy &amp; Government:</span> Navigating global 
-        regulations to secure strategic advantages.
-      </li>
-      <li>
-        <span class="blue-highlight">M&amp;A, Fundraising &amp; Investment:</span> Expert 
-        analysis enabling inorganic growth and transformation.
-      </li>
-    </ul>
-  </div>
-
-</body>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Digital Strategy</h4>
+                        <p>
+                            Empowering legacy institutions and disruptors to
+                            leverage digital innovation.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Execution</h4>
+                        <p>
+                            Transforming strategy into sustainable roadmaps for
+                            transformative growth.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Product Development</h4>
+                        <p>
+                            Igniting innovation from idea to market-shaping
+                            launch.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Go-to-Market</h4>
+                        <p>
+                            Dynamic strategies that break barriers and seize
+                            opportunities.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Policy &amp; Government</h4>
+                        <p>
+                            Navigating global regulations to secure strategic
+                            advantages.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>M&amp;A, Fundraising &amp; Investment</h4>
+                        <p>
+                            Expert analysis enabling inorganic growth and
+                            transformation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

@@ -1,117 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Skyhaven Group</title>
-  <style>
-    /* Reset / Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background-color: #000;
-      font-family: Arial, sans-serif;
-      color: #fff;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <title>Skyhaven Group</title>
+        <style>
+            /* Centered Content Container */
+            .container-logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
 
-    /* Top Navigation Bar */
-    nav {
-      width: 100%;
-      background-color: #111; /* Slightly lighter than pure black */
-      position: fixed;       /* Sticks to the top */
-      top: 0;
-      left: 0;
-      padding: 1rem 2rem;
-      z-index: 999;          /* Ensures nav stays on top */
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem; /* Spacing between menu items */
-      align-items: center;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: color 0.3s ease;
-    }
-    nav ul li a:hover {
-      color: #3498db; /* Hover color */
-    }
+                /* Push content below the fixed nav bar */
+                min-height: 50vh;
+                padding-top: 6rem; /* Spacing so content isn’t hidden behind nav */
+                text-align: center;
+            }
 
-    /* Centered Content Container */
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+            /* "SG" styling */
+            .sg {
+                font-size: 15rem; /* Adjust as needed */
+                font-weight: bold;
+                line-height: 1;
+                margin: 0;
+            }
+            .sg .s {
+                color: #fff;
+            }
+            .sg .g {
+                color: #3498db; /* Accent color */
+            }
 
-      /* Push content below the fixed nav bar */
-      min-height: 100vh; 
-      padding-top: 6rem; /* Spacing so content isn’t hidden behind nav */
-      text-align: center;
-    }
+            /* Company title: SKYHAVEN GROUP */
+            .title {
+                font-size: 3rem;
+                text-transform: uppercase;
+                margin: 1rem 0 0;
+            }
+            .title .group {
+                color: #3498db;
+                margin-left: 0.5rem;
+            }
 
-    /* "SG" styling */
-    .sg {
-      font-size: 15rem; /* Adjust as needed */
-      font-weight: bold;
-      line-height: 1;
-      margin: 0;
-    }
-    .sg .s {
-      color: #fff;
-    }
-    .sg .g {
-      color: #3498db; /* Accent color */
-    }
+            /* Footer-style line for names and details */
+            .footer {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                font-weight: lighter;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css"
+            integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Top Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">SG</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    /* Company title: SKYHAVEN GROUP */
-    .title {
-      font-size: 3rem;
-      text-transform: uppercase;
-      margin: 1rem 0 0;
-    }
-    .title .group {
-      color: #3498db;
-      margin-left: 0.5rem;
-    }
-
-    /* Footer-style line for names and details */
-    .footer {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      font-weight: lighter;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Top Navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Content -->
-  <div class="container">
-    <h1 class="sg">
-      <span class="s">S</span>
-      <span class="g">G</span>
-    </h1>
-    <div class="title">
-      SKYHAVEN<span class="group">GROUP</span>
-    </div>
-    <div class="footer">
-      RHISHI PETHE, MICHAEL OTT, Data &amp; AI Expert, Digital Strategist
-    </div>
-  </div>
-
-</body>
+        <!-- Main Content -->
+        <div class="container container-logo">
+            <h1 class="sg">
+                <span class="s">S</span>
+                <span class="g">G</span>
+            </h1>
+            <div class="title">SKYHAVEN<span class="group">GROUP</span></div>
+            <div class="footer">
+                RHISHI PETHE, MICHAEL OTT, Data &amp; AI Expert, Digital
+                Strategist
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
