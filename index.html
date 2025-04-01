@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Skyhaven Group</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <style>
+            /* Reset / Base */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                padding-bottom: 55px;
+            }
+
+            .container-logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                /* Push content below the fixed nav bar */
+                min-height: 50vh;
+                padding-top: 6rem;
+                /* Spacing so content isn’t hidden behind nav */
+                text-align: center;
+            }
+
+            /* "SG" styling */
+            .sg {
+                font-size: 15rem;
+                /* Adjust as needed */
+                font-weight: bold;
+                line-height: 1;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+            .sg .g,
+            .sg .s {
+                margin: 0;
+                padding: 0;
+            }
+            .sg .s {
+                color: #fff;
+            }
+            .sg .g {
+                color: #3498db;
+                /* Accent color */
+            }
+
+            /* Company title: SKYHAVEN GROUP */
+            .title {
+                font-size: 3rem;
+                text-transform: uppercase;
+                margin: 1rem 0 0;
+            }
+            .title .group {
+                color: #3498db;
+                margin-left: 0.5rem;
+            }
+
+            /* Headline / Mission statement */
+            .mission-title {
+                font-size: 1.5rem;
+                line-height: 1.4;
+                margin-bottom: 1.5rem;
+                color: #3498db;
+                /* Blue accent for the headline */
+                font-weight: bold;
+            }
+
+            /* Body text under mission statement */
+            .mission-body {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+            }
+
+            .expertise-title {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #3498db;
+            }
+        </style>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css"
+            integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2"
+            crossorigin="anonymous"/>
+        <link rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">
+        SKYHAVEN<span style="color: #3498db">GROUP</span></a>
+</a>
+<button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/expertise">EXPERTISE</a>
+        </li>
+    </ul>
+</div>
+</nav>
+        
+<main role="main">
+    <div
+        class="jumbotron"
+        style="
+            background-image: url('/assets/hero.webp');
+            background-position: center;
+            background-size: cover;
+        "
+    >
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-md-6"
+                    style="
+                        color: #000;
+                        background-color: rgba(214, 234, 247, 0.9);
+                        padding: 20px;
+                        border-radius: 10px;
+                    "
+                >
+                    <!-- Mission Section -->
+                    <h1
+                        class="mission-title text-uppercase"
+                        style="color: #000"
+                    >
+                        We're on a mission to redefine business leadership &amp;
+                        unleash digital innovation built on extensive
+                        operational experience.
+                    </h1>
+                    <p class="mission-body">
+                        Our fractional C-suite team of digital natives who fuse
+                        decades of operational excellence with unstoppable
+                        energy, turning breakthrough innovation into real-world
+                        success. We move an organization beyond pen and paper
+                        into results.
+                    </p>
+                </div>
+                <!--<div class="col-md-6">
+                    <img
+                        src="/assets/hero.webp"
+                        alt="SkyHaven Group Logo"
+                        class="img-fluid"
+                        style="
+                            width: 350px;
+                            border-radius: 1%;
+                            object-fit: cover;
+                        "
+                    />
+                </div>-->
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="container">
+    <div>
+        <h6 style="color: #c1c1c1">
+            RHISHI PETHE <i class="bi-dot"></i> MICHAEL OTT
+            <i class="bi-dot"></i>
+            Data &amp; AI Expert <i class="bi-dot"></i> Digital Strategist
+        </h6>
+    </div>
+</div>
+
+        <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+    <div class="container">
+        <p class="text-uppercase">
+            &copy; Copyright 2025 SkyHaven Group, All rights reserved.
+            <i class="bi-dot"></i>
+            <a href="https://agtechalchemy.substack.com">AGTECH ALCHEMY</a>
+            <i class="bi-dot"></i>
+            <a href="mailto:info@skyhavengroup.com">Contact SkyHaven Group</a>
+        </p>
+    </div>
+</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
