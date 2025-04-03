@@ -9,7 +9,7 @@
         "watch": "npx @11ty/eleventy --watch"
     },
     "keywords": [],
-    "author": "",
+    "author": "Skyhaven Group",
     "license": "ISC",
     "description": "",
     "devDependencies": {
