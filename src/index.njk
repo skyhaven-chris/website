@@ -4,65 +4,129 @@ title: Home
 ---
 
 <main role="main">
-    <div
-        class="jumbotron"
-        style="
-            background-image: url('/assets/hero.webp');
-            background-position: center;
-            background-size: cover;
-        "
-    >
-        <div class="container">
-            <div class="row">
-                <div
-                    class="col-md-6"
-                    style="
-                        color: #000;
-                        background-color: rgba(214, 234, 247, 0.9);
-                        padding: 20px;
-                        border-radius: 10px;
-                    "
-                >
-                    <!-- Mission Section -->
-                    <h1
-                        class="mission-title text-uppercase"
-                        style="color: #000"
-                    >
-                        We're on a mission to redefine business leadership &amp;
-                        unleash digital innovation built on extensive
-                        operational experience.
-                    </h1>
-                    <p class="mission-body">
-                        Our fractional C-suite team of digital natives who fuse
-                        decades of operational excellence with unstoppable
-                        energy, turning breakthrough innovation into real-world
-                        success. We move an organization beyond pen and paper
-                        into results.
-                    </p>
-                </div>
-                <!--<div class="col-md-6">
-                    <img
-                        src="/assets/hero.webp"
-                        alt="SkyHaven Group Logo"
-                        class="img-fluid"
-                        style="
-                            width: 350px;
-                            border-radius: 1%;
-                            object-fit: cover;
-                        "
-                    />
-                </div>-->
+    <!-- Hero Section -->
+    <div class="relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/hero.webp" alt="Abstract background" class="w-full h-full object-cover">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/70"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-black/75 backdrop-blur-md p-10 rounded-lg border border-gray-700 shadow-2xl">
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight uppercase text-shadow">
+                    Redefining Business Leadership, Unleashing Digital Innovation.
+                </h1>
+                <p class="mt-6 text-lg max-w-3xl mx-auto text-gray-300 leading-relaxed">
+                    Our fractional C-suite team fuses decades of operational excellence with unstoppable energy, turning breakthrough ideas into real-world success. We partner with you to move beyond the status quo and achieve tangible results.
+                </p>
             </div>
         </div>
     </div>
-</main>
 
-<div class="container">
-    <div>
-        <h6 style="color: #c1c1c1">
-            RHISHI PETHE <i class="bi-dot"></i> MICHAEL OTT
-            <i class="bi-dot"></i>
-            Data &amp; AI Expert <i class="bi-dot"></i> Digital Strategist
-        </h6>
+    <!-- Our Leadership Section -->
+    <div class="bg-black py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Our Leadership Team</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">Decades of experience driving digital transformation.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16">
+                <!-- Rhishi Pethe -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-white">Rhishi Pethe</h3>
+                    <p class="mt-2 text-lg font-medium text-[#0099ff]">Founding Partner</p>
+                    <p class="mt-4 text-gray-400">
+                        A leading voice in agricultural technology and data strategy, Rhishi is an expert at transforming complex data into actionable insights and scalable AI-driven solutions that create competitive advantages.
+                    </p>
+                </div>
+                <!-- Michael Ott -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-white">Michael Ott</h3>
+                    <p class="mt-2 text-lg font-medium text-[#0099ff]">Founding Partner</p>
+                    <p class="mt-4 text-gray-400">
+                        With a deep background in digital product development and go-to-market strategy, Michael excels at navigating corporate structures to build and launch innovative products that capture market share and drive growth.
+                    </p>
+                </div>
+                <!-- Data & AI Expert -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-white">Data & AI Expert</h3>
+                    <p class="mt-2 text-lg font-medium text-[#0099ff]">Fractional C-Suite Talent</p>
+                    <p class="mt-4 text-gray-400">
+                        Our team includes seasoned experts who specialize in harnessing the power of data analytics and artificial intelligence to unlock new revenue streams and optimize operations for our clients.
+                    </p>
+                </div>
+                <!-- Digital Strategist -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-white">Digital Strategist</h3>
+                    <p class="mt-2 text-lg font-medium text-[#0099ff]">Fractional C-Suite Talent</p>
+                    <p class="mt-4 text-gray-400">
+                        We provide strategic guidance on digital transformation, helping businesses adapt to the evolving landscape with innovative product strategies and effective go-to-market execution.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
+    <!-- Our Philosophy Section -->
+    <div class="bg-gray-900/50 py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Our Philosophy</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">The principles that guide our partnerships.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Principle 1: Strategic Foresight -->
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 mx-auto">
+                        <i class="bi-binoculars text-3xl text-[#0099ff]"></i>
+                    </div>
+                    <h5 class="mt-5 text-xl font-bold tracking-wide">Strategic Foresight</h5>
+                    <p class="mt-3 text-gray-400 leading-relaxed">
+                        We look beyond the immediate horizon to anticipate market shifts and identify long-term opportunities for sustainable growth.
+                    </p>
+                </div>
+                <!-- Principle 2: Execution Excellence -->
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 mx-auto">
+                        <i class="bi-check2-circle text-3xl text-[#0099ff]"></i>
+                    </div>
+                    <h5 class="mt-5 text-xl font-bold tracking-wide">Execution Excellence</h5>
+                    <p class="mt-3 text-gray-400 leading-relaxed">
+                        An idea is only as good as its execution. We build actionable roadmaps and drive implementation to deliver concrete results.
+                    </p>
+                </div>
+                <!-- Principle 3: Transformative Results -->
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 mx-auto">
+                        <i class="bi-graph-up-arrow text-3xl text-[#0099ff]"></i>
+                    </div>
+                    <h5 class="mt-5 text-xl font-bold tracking-wide">Transformative Results</h5>
+                    <p class="mt-3 text-gray-400 leading-relaxed">
+                        Our goal is to create lasting impact, empowering your organization with the tools and strategies for continuous innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Call to Action Section -->
+    <div class="bg-black">
+        <div class="max-w-7xl mx-auto text-center py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Ready to innovate?</span>
+                <span class="block text-[#0099ff]">Let's build the future together.</span>
+            </h2>
+            <div class="mt-8 flex justify-center">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="mailto:info@skyhavengroup.com" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#0099ff] hover:bg-blue-600 transition-colors duration-300">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
