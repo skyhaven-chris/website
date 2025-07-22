@@ -1,202 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Skyhaven Group</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <style>
-            /* Reset / Base */
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+<head>
+    <meta charset="UTF-8"/>
+    <title>Skyhaven Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Apply a base font to the site */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased">
+    <!-- Main container to push footer down -->
+    <div class="flex flex-col min-h-screen">
+        <!-- Navbar Component -->
+        <nav class="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a class="text-2xl font-black tracking-wider text-white transition-opacity duration-300 hover:opacity-80" href="/">
+                    SKYHAVEN<span class="text-[#0099ff]">GROUP</span>
+                </a>
+            </div>
 
-            body {
-                padding-bottom: 55px;
-            }
-
-            .container-logo {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                /* Push content below the fixed nav bar */
-                min-height: 50vh;
-                padding-top: 6rem;
-                /* Spacing so content isn’t hidden behind nav */
-                text-align: center;
-            }
-
-            /* "SG" styling */
-            .sg {
-                font-size: 15rem;
-                /* Adjust as needed */
-                font-weight: bold;
-                line-height: 1;
-                margin: 0;
-                display: flex;
-                justify-content: center;
-            }
-            .sg .g,
-            .sg .s {
-                margin: 0;
-                padding: 0;
-            }
-            .sg .s {
-                color: #fff;
-            }
-            .sg .g {
-                color: #3498db;
-                /* Accent color */
-            }
-
-            /* Company title: SKYHAVEN GROUP */
-            .title {
-                font-size: 3rem;
-                text-transform: uppercase;
-                margin: 1rem 0 0;
-            }
-            .title .group {
-                color: #3498db;
-                margin-left: 0.5rem;
-            }
-
-            /* Headline / Mission statement */
-            .mission-title {
-                font-size: 1.5rem;
-                line-height: 1.4;
-                margin-bottom: 1.5rem;
-                color: #3498db;
-                /* Blue accent for the headline */
-                font-weight: bold;
-            }
-
-            /* Body text under mission statement */
-            .mission-body {
-                font-size: 1rem;
-                line-height: 1.6;
-                margin-bottom: 2rem;
-            }
-
-            .expertise-title {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-                color: #3498db;
-            }
-        </style>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css"
-            integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2"
-            crossorigin="anonymous"/>
-        <link rel="stylesheet" 
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        SKYHAVEN<span style="color: #3498db">GROUP</span></a>
-</a>
-<button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-    >
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="/">HOME</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/expertise">EXPERTISE</a>
-        </li>
-    </ul>
-</div>
-</nav>
-        
-<main role="main">
-    <div
-        class="jumbotron"
-        style="
-            background-image: url('/assets/hero.webp');
-            background-position: center;
-            background-size: cover;
-        "
-    >
-        <div class="container">
-            <div class="row">
-                <div
-                    class="col-md-6"
-                    style="
-                        color: #000;
-                        background-color: rgba(214, 234, 247, 0.9);
-                        padding: 20px;
-                        border-radius: 10px;
-                    "
-                >
-                    <!-- Mission Section -->
-                    <h1
-                        class="mission-title text-uppercase"
-                        style="color: #000"
-                    >
-                        We're on a mission to redefine business leadership &amp;
-                        unleash digital innovation built on extensive
-                        operational experience.
-                    </h1>
-                    <p class="mission-body">
-                        Our fractional C-suite team of digital natives who fuse
-                        decades of operational excellence with unstoppable
-                        energy, turning breakthrough innovation into real-world
-                        success. We move an organization beyond pen and paper
-                        into results.
-                    </p>
+            <!-- Desktop Menu -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase tracking-wider transition-colors duration-300">Home</a>
+                    <a href="/expertise" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase tracking-wider transition-colors duration-300">Expertise</a>
                 </div>
-                <!--<div class="col-md-6">
-                    <img
-                        src="/assets/hero.webp"
-                        alt="SkyHaven Group Logo"
-                        class="img-fluid"
-                        style="
-                            width: 350px;
-                            border-radius: 1%;
-                            object-fit: cover;
-                        "
-                    />
-                </div>-->
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="-mr-2 flex md:hidden">
+                <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Icon for menu closed -->
+                    <svg id="menu-closed-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!-- Icon for menu open -->
+                    <svg id="menu-open-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
+
+    <!-- Mobile Menu, show/hide based on menu state. -->
+    <div class="md:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wider">Home</a>
+            <a href="/expertise" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase tracking-wider">Expertise</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // JavaScript to toggle the mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClosedIcon = document.getElementById('menu-closed-icon');
+    const menuOpenIcon = document.getElementById('menu-open-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+        const isMenuOpen = mobileMenu.classList.toggle('hidden');
+        menuClosedIcon.classList.toggle('hidden', !isMenuOpen);
+        menuOpenIcon.classList.toggle('hidden', isMenuOpen);
+    });
+</script>
+
+
+        <!-- Page Content -->
+        <main class="flex-grow">
+            
+<main role="main">
+    <!-- Hero Section -->
+    <div class="relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/hero.webp" alt="Abstract background" class="w-full h-full object-cover">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/70"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-black/75 backdrop-blur-md p-10 rounded-lg border border-gray-700 shadow-2xl">
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight uppercase text-shadow">
+                    Redefining Business Leadership, Unleashing Digital Innovation.
+                </h1>
+                <p class="mt-6 text-lg max-w-3xl mx-auto text-gray-300 leading-relaxed">
+                    Our fractional C-suite team fuses decades of operational excellence with unstoppable energy, turning breakthrough ideas into real-world success. We partner with you to move beyond the status quo and achieve tangible results.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Leadership Section -->
+    <div class="bg-black py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Our Leadership Team</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">Decades of experience driving digital transformation.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16">
+                <!-- Rhishi Pethe -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-white">Rhishi Pethe</h3>
+                    <p class="mt-2 text-lg font-medium text-[#0099ff]">Founding Partner</p>
+                    <p class="mt-4 text-gray-400">
+                        A leading voice in agricultural technology and data strategy, Rhishi is an expert at transforming complex data into actionable insights and scalable AI-driven solutions that create competitive advantages.
+                    </p>
+                </div>
+                <!-- Michael Ott -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-white">Michael Ott</h3>
+                    <p class="mt-2 text-lg font-medium text-[#0099ff]">Founding Partner</p>
+                    <p class="mt-4 text-gray-400">
+                        With a deep background in digital product development and go-to-market strategy, Michael excels at navigating corporate structures to build and launch innovative products that capture market share and drive growth.
+                    </p>
+                </div>
+                <!-- Data & AI Expert -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-white">Data & AI Expert</h3>
+                    <p class="mt-2 text-lg font-medium text-[#0099ff]">Fractional C-Suite Talent</p>
+                    <p class="mt-4 text-gray-400">
+                        Our team includes seasoned experts who specialize in harnessing the power of data analytics and artificial intelligence to unlock new revenue streams and optimize operations for our clients.
+                    </p>
+                </div>
+                <!-- Digital Strategist -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-white">Digital Strategist</h3>
+                    <p class="mt-2 text-lg font-medium text-[#0099ff]">Fractional C-Suite Talent</p>
+                    <p class="mt-4 text-gray-400">
+                        We provide strategic guidance on digital transformation, helping businesses adapt to the evolving landscape with innovative product strategies and effective go-to-market execution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Philosophy Section -->
+    <div class="bg-gray-900/50 py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Our Philosophy</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">The principles that guide our partnerships.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Principle 1: Strategic Foresight -->
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 mx-auto">
+                        <i class="bi-binoculars text-3xl text-[#0099ff]"></i>
+                    </div>
+                    <h5 class="mt-5 text-xl font-bold tracking-wide">Strategic Foresight</h5>
+                    <p class="mt-3 text-gray-400 leading-relaxed">
+                        We look beyond the immediate horizon to anticipate market shifts and identify long-term opportunities for sustainable growth.
+                    </p>
+                </div>
+                <!-- Principle 2: Execution Excellence -->
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 mx-auto">
+                        <i class="bi-check2-circle text-3xl text-[#0099ff]"></i>
+                    </div>
+                    <h5 class="mt-5 text-xl font-bold tracking-wide">Execution Excellence</h5>
+                    <p class="mt-3 text-gray-400 leading-relaxed">
+                        An idea is only as good as its execution. We build actionable roadmaps and drive implementation to deliver concrete results.
+                    </p>
+                </div>
+                <!-- Principle 3: Transformative Results -->
+                <div class="text-center p-8">
+                    <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-800 mx-auto">
+                        <i class="bi-graph-up-arrow text-3xl text-[#0099ff]"></i>
+                    </div>
+                    <h5 class="mt-5 text-xl font-bold tracking-wide">Transformative Results</h5>
+                    <p class="mt-3 text-gray-400 leading-relaxed">
+                        Our goal is to create lasting impact, empowering your organization with the tools and strategies for continuous innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Call to Action Section -->
+    <div class="bg-black">
+        <div class="max-w-7xl mx-auto text-center py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Ready to innovate?</span>
+                <span class="block text-[#0099ff]">Let's build the future together.</span>
+            </h2>
+            <div class="mt-8 flex justify-center">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="mailto:info@skyhavengroup.com" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#0099ff] hover:bg-blue-600 transition-colors duration-300">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </main>
 
-<div class="container">
-    <div>
-        <h6 style="color: #c1c1c1">
-            RHISHI PETHE <i class="bi-dot"></i> MICHAEL OTT
-            <i class="bi-dot"></i>
-            Data &amp; AI Expert <i class="bi-dot"></i> Digital Strategist
-        </h6>
-    </div>
-</div>
+        </main>
 
-        <footer class="footer mt-auto py-3 bg-light fixed-bottom">
-    <div class="container">
-        <p class="text-uppercase">
-            &copy; Copyright 2025 SkyHaven Group, All rights reserved.
-            <i class="bi-dot"></i>
-            <a href="https://agtechalchemy.substack.com">AGTECH ALCHEMY</a>
-            <i class="bi-dot"></i>
-            <a href="mailto:info@skyhavengroup.com">Contact SkyHaven Group</a>
-        </p>
+        <!-- Footer Component -->
+        <footer class="bg-black border-t border-gray-800">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p class="text-sm text-gray-400 text-center md:text-left">
+                &copy; 2025 SkyHaven Group. All Rights Reserved.
+            </p>
+            <div class="flex items-center space-x-4">
+                <a href="https://agtechalchemy.substack.com" class="text-sm text-gray-400 hover:text-[#0099ff] transition-colors duration-300 uppercase tracking-wider">
+                    AgTech Alchemy
+                </a>
+                <span class="text-gray-600">|</span>
+                <a href="mailto:info@skyhavengroup.com" class="text-sm text-gray-400 hover:text-[#0099ff] transition-colors duration-300 uppercase tracking-wider">
+                    Contact
+                </a>
+            </div>
+        </div>
     </div>
 </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+
+    </div>
+</body>
 </html>
